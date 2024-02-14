@@ -81,7 +81,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 function reorda() {
-    let file = new Audio('src/reorda.m4a')
+    let file = new Audio('../IMG/reorda.m4a')
     let img = document.getElementById('reorda')
 
     img.style.display = 'block'
