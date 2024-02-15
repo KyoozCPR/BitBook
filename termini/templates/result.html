@@ -1,0 +1,18 @@
+{% extends 'searchbar.html' %}
+
+{% block description %}
+<center> 
+    {% if termini %}     
+    <h1>Risultati per {{name}}:</h1>
+    {% for termine in termini %}
+    <div class="risultato">
+        <h2>{{termine.name}}:</h2> 
+        <p>{{termine.description}}</p>
+    </div> 
+    {% endfor %}
+    {% else %}
+
+    {% endif %}
+</center>
+
+{% endblock %}
